@@ -1,5 +1,5 @@
 resource "aws_iam_role" "test_role" {
-  name = "test_role_666"
+  name_prefix = var.name_prefix
 
   assume_role_policy = <<EOF
 {
@@ -17,8 +17,5 @@ resource "aws_iam_role" "test_role" {
 }
 
 EOF
- tags = {
-    Name        = "test role 666"
-    Environment = "Dev"
-  }
+ tags = var.tags
 }
