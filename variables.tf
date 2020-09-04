@@ -13,7 +13,7 @@ variable "tags" {
   type = map
   default = {
     created_by = "mackah666"
-    environment = "uat"
+    environment = "prod"
     purpose = "logs"
 
   }
